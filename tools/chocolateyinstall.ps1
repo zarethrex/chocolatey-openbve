@@ -1,12 +1,12 @@
 ﻿
 $ErrorActionPreference = 'Stop';
-$checksum = "b7a3c5ad5074182d743a21b03e9ece3004984711073434901b400858a13fd653"
+$checksum = "68479049589c1d294dc4cb28297760d0c20f876cf7d97cb7ede90b82d6e19f9b"
 $repository = "leezer3/OpenBve"
 $software_name = "OpenBve"
 
 Write-Host "Fetching version '$env:ChocolateyPackageVersion'"
 
-$download_url = "https://github.com/$repository/releases/download/1.12.1.0/OpenBVE-1.12.1.0.zip"
+$download_url = "https://github.com/$repository/releases/download/1.12.1.1/OpenBVE-1.12.1.1.zip"
 $toolsDir = "$env:ProgramFiles\$software_name"
 
 $packageArgs = @{
@@ -16,7 +16,7 @@ $packageArgs = @{
   softwareName   = $software_name
   checksum       = $checksum
   checksumType   = 'sha256'
-  validExitCodes= @(0, 3010, 1605, 1614, 1641)
+  validExitCodes = @(0, 3010, 1605, 1614, 1641)
 }
 
 $exe_path_64 = "$toolsDir\$software_name.exe"
