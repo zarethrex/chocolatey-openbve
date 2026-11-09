@@ -1,12 +1,12 @@
 ﻿
 $ErrorActionPreference = 'Stop';
-$checksum = "144a0110a9f58f9c33402c105a451c3b501e6267a2e9854c956b075f25f3373a"
+$checksum = "e970a2a796967027933faeb985787ac58a812ab1fc5f49250f96ea3e7fe03bb3"
 $repository = "leezer3/OpenBve"
 $software_name = "OpenBve"
 
 Write-Host "Fetching version '$env:ChocolateyPackageVersion'"
 
-$download_url = "https://github.com/$repository/releases/download/1.14.1.2/OpenBVE-1.14.1.2.zip"
+$download_url = "https://github.com/$repository/releases/download/1.14.1.3/OpenBVE-1.14.1.3.zip"
 $toolsDir = "$env:ProgramFiles\$software_name"
 
 $packageArgs = @{
